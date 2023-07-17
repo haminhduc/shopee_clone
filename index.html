@@ -27,16 +27,42 @@
         <div class="grid">
           <nav class="header__navbar">
             <ul class="header__navbar-list">
-              <li class="header__navbar-item header__navbar-item--separate">
+              <li
+                class="header__navbar-item header__navbar-item--has-qr header__navbar-item--separate"
+              >
                 Go to store
+                <!-- header QR code  -->
+                <div class="header__qr">
+                  <img
+                    src="assets/img/shopeeQR.png"
+                    alt="shopeeQR"
+                    class="header__qr-img"
+                  />
+                  <div class="header__qr-apps">
+                    <a href="" class="header__qr-link">
+                      <img
+                        src="assets/img/appstore.png"
+                        alt="app store link"
+                        class="header__qr-download-img"
+                      />
+                    </a>
+                    <a href="" class="header__qr-link">
+                      <img
+                        src="assets/img/googleplay.png"
+                        alt="googleplay link"
+                        class="header__qr-download-img"
+                      />
+                    </a>
+                  </div>
+                </div>
               </li>
               <li class="header__navbar-item">
-                Contact
+                <span class="header__navbar-title--no-pointer"> Contact </span>
                 <a href="" class="header__navbar-icon-link-facebook"
-                  ><i class="fa-brands fa-facebook"></i
+                  ><i class="header__navbar-icon fa-brands fa-facebook"></i
                 ></a>
                 <a href="" class="header__navbar-icon-link-instagram"
-                  ><i class="fa-brands fa-instagram"></i
+                  ><i class="header__navbar-icon fa-brands fa-instagram"></i
                 ></a>
               </li>
             </ul>
@@ -44,7 +70,7 @@
               <li class="header__navbar-item">
                 <a href="" class="header__navbar-item-link">
                   <a href="" class="header__navbar-icon-link-notifications"
-                    ><i class="fa-regular fa-bell"></i
+                    ><i class="header__navbar-icon fa-regular fa-bell"></i
                   ></a>
                   Notifications</a
                 >
@@ -52,7 +78,9 @@
               <li class="header__navbar-item">
                 <a href="" class="header__navbar-item-link">
                   <a href="" class="header__navbar-icon-link-help"
-                    ><i class="fa-solid fa-circle-question"></i
+                    ><i
+                      class="header__navbar-icon fa-solid fa-circle-question"
+                    ></i
                   ></a>
                   Help</a
                 >
