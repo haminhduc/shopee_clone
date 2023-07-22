@@ -1,5 +1,6 @@
 /* set up css */
 :root {
+  --primary-color: rgb(238, 75, 43);
   --white-color: #fff;
   --black-color: #000;
   --text-color: #333;
