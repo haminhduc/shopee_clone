@@ -163,6 +163,7 @@ html {
   border-radius: 2px;
   background-color: var(--white-color);
   padding: 8px 16px;
+  z-index: 3;
 }
 .select-input__link {
   display: block;
@@ -172,6 +173,35 @@ html {
 }
 .select-input__link:hover {
   color: var(--primary-color);
+}
+/* pagination  */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination-item {
+  margin: 0 8px;
+}
+.pagination-item__link {
+  --height: 30px;
+  display: block;
+  font-size: 2rem;
+  color: #939393;
+  min-width: 40px;
+  height: var(--height);
+  line-height: var(--height);
+  text-align: center;
+  border-radius: 2px;
+}
+.pagination-item--active .pagination-item__link {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+.pagination-item--active .pagination-item__link:hover {
+  background-color: #ed5c3f;
+}
+.pagination-item__icon {
 }
 /* animation */
 @keyframes fadeIn {
