@@ -11,6 +11,7 @@
   --header-with-search-height: calc(
     var(--header-height) - var(--navbar-height)
   );
+  --header-sort-bar-height: 46px;
 }
 * {
   box-sizing: inherit;
@@ -28,14 +29,7 @@ html {
   box-sizing: border-box;
 }
 /* Responsive  */
-.grid {
-  width: 1200px;
-  max-width: 100%;
-  margin: 0 auto;
-}
-.grid__full-width {
-  width: 100%;
-}
+
 .grid__row {
   display: flex;
   margin-left: -5px;
@@ -204,13 +198,13 @@ html {
 /* footer  */
 .footer {
   border-top: 4px solid var(--primary-color);
-  padding-top: 50px;
   background-color: var(--white-color);
 }
 .footer__heading {
   font-size: 1.4rem;
   text-transform: uppercase;
   color: var(--text-color);
+  margin-top: 20px;
 }
 .footer-item__link {
   display: block;
